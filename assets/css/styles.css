@@ -1,10 +1,105 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap');
 
-/* font-family: 'Oswald', sans-serif;
-font-family: 'Rambla', sans-serif;
-font-family: 'Staatliches', cursive; */
+/* font-family: 
+font-family: 
+font-family:  */
 
 body {
+    background-color: var(--color-deepPurple);
+    color: var(--color-spaceGrey);
+    font-family: 'Rambla', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-border: #3f3f3f;
+    --color-companyBrand: #8C92AC;
+    --color-spaceWhite: #CCCED5;
+    --color-spaceGrey: #999CAB;
+    --color-spacePurple: #262B41;
+    --color-deepPurple: #1F2436;
+    --color-accentBlue: #7FBFFF;
+    --font-staat: 'Staatliches', cursive;
+    --font-os: 'Oswald', sans-serif;
+    --font-ram: 'Rambla', sans-serif;
+}
+
+/* global classes */
+.font-staat {
+    font: normal 400 18px var(--font-staat);
+}
+.font-staat {
+    font: normal 300 18px var(--font-os);
+}
+.font-staat {
+    font: normal 700 18px var(--font-ram);
+}
+
+/* NAV */
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: left 0.5s ease;
+    width: 100%;
+    z-index: 99999;
+}
+
+#header nav {
+    height: 100vh;
+}
+
+.toggle-button {
+    background: none;
+    color: var(--color-accentBlue);
+    border: none;
+    border-radius: 25%;
+    position: fixed;
+    right: 20px;
+    top: 25px;
+}
+
+.companyBrandDiv {
+    margin: 0;
+    padding: 45px 0;
+    text-align: center;
+}
+
+.companyBrand {
+    color: var(--color-companyBrand);
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 0;
+    transition: all 0.3s linear;
+}
+
+.companyBrand:hover {
+    color: #fff;
+    font-size: 2.125rem;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--color-spacePurple);
+}
+
+.sidebarItem {
+    color: #999CAB;
+    font-size: 16px;
+    margin: 2px 0;
+    text-transform: uppercase;
+}
+
+.sidebarItem:hover {
+    color: var(--color-spaceWhite);
+}
+
+.toggle-left {
+    left: 0 !important;
+    width: 1000px !important;
 }
